@@ -13,3 +13,11 @@ function moveForward() {
             pointer = i;
         }
     }
+
+    if (++pointer == figures.length) {
+        pointer = 0;
+    }
+    
+    figures[pointer].className = 'visible';
+    setTimeout(moveForward, slideInterval);
+}
