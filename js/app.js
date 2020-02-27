@@ -21,3 +21,8 @@ function moveForward() {
     figures[pointer].className = 'visible';
     setTimeout(moveForward, slideInterval);
 }
+
+function startPlayback() {
+    setTimeout(moveForward, slideInterval);
+}
+startPlayback();
